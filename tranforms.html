@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D-Transforms</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .mainContainer{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            margin: 3px;
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            border :3px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            transition: all 2s linear ;
+        }
+        strong{
+            font-size: 20px;
+        }
+        .container:hover{
+            background-color: rgb(247, 106, 237);
+            /* transform: rotate(1440deg); */
+            transform: scale(2);
+            /* transform: scale(0.0 1); */
+            /* transform: skew(-5deg); */
+            /* transform : translate(-100px,-100px); */
+            /* transform: skewY(1440deg); */
+            /* transform: skewX(11.3deg); */
+            /* width: 1450px;
+            height: 900px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="container">
+            <strong>This is Container</strong>
+        </div>
+    </div>
+    
+</body>
+</html>

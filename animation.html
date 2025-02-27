@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 5px solid rgb(7, 19, 250);
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+        }
+
+        .box {
+            margin: 10px;
+            width: 300px;
+            height: 50px;
+            background-color: brown;
+            border-radius: 20px;
+            border: 3px solid yellow;
+            position: relative;
+            /* animation-name: rightMove;
+            animation-timing-function: cubic-bezier(0.1,0.3,1.0,-2,0);
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+            animation-delay: 2s;
+            animation-fill-mode: both;
+            animation-direction: alternate-reverse; */
+            animation: 3s ease-in-out 2s infinite alternate rightMove;
+        }
+
+        @keyframes rightMove {
+            from {
+                top: 0px;
+                left: 0px;
+            }
+
+            to {
+                top: 0px;
+                left: 1100px;
+            }
+        }
+
+        .box1 {
+            margin: 10px;
+            width: 300px;
+            height: 50px;
+            background-color: rgb(209, 53, 198);
+            border-radius: 20px;
+            border: 3px solid yellow;
+            position: relative;
+            animation: 3s ease-in-out 2s infinite alternate both leftMove;
+        }
+
+        @keyframes leftMove {
+            from {
+                top: 690px;
+                left: 1100px;
+            }
+
+            to {
+                top: 690px;
+                left: 0px;
+            }
+        }
+
+        .circle {
+            margin: 10px;
+            width: 70px;
+            height: 70px;
+            background-color: rgb(209, 53, 198);
+            border-radius: 50px;
+            left: 40%;
+            top: 40%;
+            border: 3px solid yellow;
+            position: relative;
+            animation: 3s ease-in-out 2s infinite alternate both circleMove;
+        }
+
+        @keyframes circleMove {
+
+            /* This is the Starting point of the Animation  which define the starting point of the circle where the circle is being animated */
+            0% {
+                top: 2%;
+                left: 5%;
+            }
+
+            /* This is the quater point of the Animation  which define the quater point of the circle where the circle is being animated */
+            25% {
+                top: 25%;
+                left: 90%;
+            }
+
+            /* This is the half point of the Animation  which define the half point of the circle where the circle is being animated */
+            50% {
+                top: 60%;
+                left: 10%;
+            }
+
+            /* This is the lat point of the Animation  which define the last point of the circle where the circle is being animated */
+            100% {
+                top: 75%;
+                left: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+        </div>
+        <div class="circle">
+
+        </div>
+        <div class="box1">
+        </div>
+    </div>
+</body>
+
+</html>

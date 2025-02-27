@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        .image {
+            border: 3px solid red;
+            width: 200px;
+            height: 200px;
+            margin: 6px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        .boxUpper {
+            margin: 2px;
+            display: flex;
+            border: 2px solid black;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .items {
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            margin: 4px;
+        }
+
+        #box1 {
+            background-color: blue;
+        }
+
+        #box2 {
+            background-color: brown;
+        }
+
+        @media (max-width:640px) {
+            .boxUpper{
+                flex-direction: column;
+            }
+            .box{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxUpper">
+        <div class="box">
+            <div id="box1" class="items">TEXT1</div>
+            <div id="box2" class="items">TEXT2</div>
+        </div>
+        <div class="image"><img src="image.png" alt="Image of an Fatther"></div>
+    </div>
+</body>
+
+</html>
